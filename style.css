@@ -1,0 +1,84 @@
+* {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 20px;
+	font-size: 24px;
+}
+
+title {
+	display: none;
+}
+
+button {
+	width: 100%;
+    background: rgba(67, 82, 187, 0.6);
+    border: 3px solid rgb(130, 103, 212)
+}
+
+button:hover {
+	background: rgba(67, 82, 187, 0.9);
+	border: 3px solid rgb(130, 103, 255)
+}
+
+button:focus,
+input:focus {
+	outline: none;
+}
+
+form {
+	flex-direction: row;
+}
+
+input {
+	border: 3px solid;
+}
+
+#avatar {
+	max-width: 200px;
+}
+
+#error {
+	display: none;
+	background: #f7aaaa;
+    border: 2px solid red;
+}
+
+
+.lds-ring {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #5affc6;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #5affc6 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
